@@ -41,7 +41,7 @@ public class BaseClass extends WebDirverUtilities {
 	}
 	//@Parameters("browser")
 	@BeforeClass(groups = { "SmokeTest", "RegionalTest" ,"Regression"})
-	public void launchBrowser(String browser) throws IOException {
+	public void launchBrowser() throws IOException {
 
 		// System.setProperty("webdriver.chrome.driver",
 		// "E:\\Se\\chromedriver_win32\\chromedriver.exe");

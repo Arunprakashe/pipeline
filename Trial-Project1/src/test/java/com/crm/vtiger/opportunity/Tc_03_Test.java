@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import com.crm.vtiger.genericFileUtility.BaseClass;
+import com.crm.vtiger.genericJavaUtilities.JavaUtilities;
 import com.crm.vtiger.objectRepository.HomePage;
 import com.crm.vtiger.objectRepository.OpportunityPom;
 
@@ -17,7 +18,8 @@ public void oppurtunityTest() {
 	
 	OpportunityPom opp = new OpportunityPom(driver);
 	opp.opportunityPlus();
-	driver.findElement(By.xpath("//input[@name='potentialname']")).sendKeys("sfwfw");
+	JavaUtilities ju = new JavaUtilities();
+	driver.findElement(By.xpath("//input[@name='potentialname']")).sendKeys("sfwfw"+ju.getRamdomNumber());
 	opp.saveClick();
 }
 
