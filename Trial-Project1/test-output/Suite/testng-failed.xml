@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.crm.vtiger.genericFileUtility.ListenerImp"/>
+  </listeners>
+  <test thread-count="2" name="Tc-7(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.vtiger.leads.Tc_7_Test">
+        <methods>
+          <include name="logOut"/>
+          <include name="clear"/>
+          <include name="launchBrowser"/>
+          <include name="login"/>
+          <include name="connectToDb"/>
+          <include name="closeDb"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.leads.Tc_7_Test -->
+    </classes>
+  </test> <!-- Tc-7(failed) -->
+  <test thread-count="2" name="Tc-07(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.crm.vtiger.leads.Tc_7_Test">
+        <methods>
+          <include name="logOut"/>
+          <include name="clear"/>
+          <include name="launchBrowser"/>
+          <include name="login"/>
+          <include name="connectToDb"/>
+          <include name="closeDb"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.leads.Tc_7_Test -->
+    </classes>
+  </test> <!-- Tc-07(failed) -->
+</suite> <!-- Failed suite [Suite] -->

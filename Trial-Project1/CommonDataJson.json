@@ -1,0 +1,6 @@
+{
+"Url"	"http://localhost:8888/index.php?action=Login&module=Users"
+"Username"	"admin"
+"Pwd"		"admin"
+"Browser"	"chrome"
+}
