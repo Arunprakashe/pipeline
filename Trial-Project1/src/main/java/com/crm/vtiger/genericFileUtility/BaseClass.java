@@ -48,10 +48,10 @@ public class BaseClass extends WebDirverUtilities {
 		// driver = new ChromeDriver();
 		//String browser = pf.readDataFromProperty("Browser");
 		
-		String browser1 = System.getProperty("browser");
-		if (browser1.equalsIgnoreCase("Chrome")) {
+		String browser = System.getProperty("browser");
+		if (browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
-		} else if (browser1.equalsIgnoreCase("Firefox")) {
+		} else if (browser.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
 		} else {
 			System.out.println("diff browser");
