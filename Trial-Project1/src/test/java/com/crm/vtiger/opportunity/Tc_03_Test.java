@@ -20,7 +20,7 @@ public void oppurtunityTest() {
 	opp.opportunityPlus();
 	JavaUtilities ju = new JavaUtilities();
 	driver.findElement(By.xpath("//input[@name='potentialname']")).sendKeys("sfwfw"+ju.getRamdomNumber());
-	opp.saveClick();
+	//opp.saveClick();
 }
 
 }

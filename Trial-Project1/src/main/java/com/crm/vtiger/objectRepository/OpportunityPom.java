@@ -25,7 +25,7 @@ public void opportunityPlus() {
 	getOppclk().click();
 }
 
-@FindBy(xpath = "(//input[@class='crmbutton small save'])[1]")
+@FindBy(xpath = "(//input[@name='button'])")
 private WebElement savebutton;
 
 public WebElement getSavebutton() {

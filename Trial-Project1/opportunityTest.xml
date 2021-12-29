@@ -8,7 +8,7 @@
 	</groups>
 		<test name="Tc-03">
 
-		<parameter name="browser" value="Chrome" />
+		<!-- <parameter name="browser" value="Chrome" />-->
 
 		<classes>
 			<class name="com.crm.vtiger.opportunity.Tc_03_Test" />
