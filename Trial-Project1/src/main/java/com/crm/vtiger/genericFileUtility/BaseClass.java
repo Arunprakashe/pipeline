@@ -39,7 +39,7 @@ public class BaseClass extends WebDirverUtilities {
 	public void connectToDb() throws SQLException {
 		db.connectToDB();
 	}
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass(groups = { "SmokeTest", "RegionalTest" ,"Regression"})
 	public void launchBrowser(String browser) throws IOException {
 
@@ -47,6 +47,8 @@ public class BaseClass extends WebDirverUtilities {
 		// "E:\\Se\\chromedriver_win32\\chromedriver.exe");
 		// driver = new ChromeDriver();
 		//String browser = pf.readDataFromProperty("Browser");
+		
+		browser = System.getProperty("browser");
 		if (browser.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("Firefox")) {

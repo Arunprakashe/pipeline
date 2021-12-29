@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 <test name="test">
-<parameter name="browser" value="Chrome"/>
+<!-- <parameter name="browser" value="Chrome"/>-->
 
 	<groups>
 		<run>
